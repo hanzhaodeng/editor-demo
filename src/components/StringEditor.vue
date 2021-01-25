@@ -1,5 +1,5 @@
 <template>
-  <v-text-field :value="text" @input="onChange"></v-text-field>
+  <v-text-field :value="text" @change="onChange"></v-text-field>
 </template>
 <script>
 import { find } from "./find";
@@ -17,7 +17,7 @@ export default {
         path: this.path,
         data: text
       });
-      this.$emit("input");
+      this.$emit("change");
     }
   }
 };

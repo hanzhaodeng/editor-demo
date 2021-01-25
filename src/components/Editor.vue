@@ -3,19 +3,19 @@
     <string-editor :path="['a', 'b']" />
     <string-editor :path="['a', 'b']" />
     <string-editor :path="['a', 'c']" />
-    <array-editor :component="stringEditor" :path="['a', 'd']" />
+    <array-editor :component="StringEditor" :path="['a', 'd']" />
   </div>
 </template>
 
 <script>
-import stringEditor from "@/components/StringEditor";
-import arrayEditor from "@/components/ArrayEditor";
+import StringEditor from "@/components/StringEditor";
+import ArrayEditor from "@/components/ArrayEditor";
 
 export default {
   name: "Editor",
-  components: { stringEditor, arrayEditor },
+  components: { StringEditor, ArrayEditor },
   data: () => ({
-    stringEditor: stringEditor
+    StringEditor: StringEditor
   })
 };
 </script>

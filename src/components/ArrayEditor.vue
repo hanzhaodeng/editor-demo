@@ -16,7 +16,7 @@
       <v-col>
         <component
           :is="component"
-          @input="showAdd = false"
+          @change="showAdd = false"
           :path="[...path, items.length]"
         />
       </v-col>
