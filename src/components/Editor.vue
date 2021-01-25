@@ -1,7 +1,7 @@
 <template>
   <div>
-    <string-editor :path="['a', 'b', '0']" />
-    <string-editor :path="['a', 'b', '0']" />
+    <string-editor :path="['a', 'b']" />
+    <string-editor :path="['a', 'b']" />
     <string-editor :path="['a', 'c']" />
     <array-editor :component="stringEditor" :path="['a', 'd']" />
   </div>
@@ -19,5 +19,3 @@ export default {
   })
 };
 </script>
-
-<style scoped></style>

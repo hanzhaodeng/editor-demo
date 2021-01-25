@@ -2,13 +2,15 @@
   <div>
     <v-row>
       <v-col> Array: {{ path.join(".") }} </v-col>
-      <v-col @click="showAdd = !showAdd"> + </v-col>
+      <v-col @click="showAdd = !showAdd"> <v-btn small dark>+</v-btn> </v-col>
     </v-row>
     <v-row v-for="(item, index) in items" :key="index">
       <v-col>
         <component :is="component" :path="[...path, index]" />
       </v-col>
-      <v-col @click="remove(index)">-</v-col>
+      <v-col>
+        <v-btn small dark @click="remove(index)"> - </v-btn>
+      </v-col>
     </v-row>
     <v-row v-if="showAdd">
       <v-col>

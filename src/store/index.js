@@ -7,8 +7,8 @@ export default new Vuex.Store({
   state: {
     scenario: {
       a: {
-        b: [1],
-        c: "123",
+        b: "i am a.b",
+        c: "i am a.c",
         d: []
       }
     }
