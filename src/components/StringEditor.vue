@@ -1,5 +1,5 @@
 <template>
-  <v-text-field :value="text" @input="onInput"></v-text-field>
+  <v-text-field :value="text" @change="onChange"></v-text-field>
 </template>
 <script>
 import { find } from "./find";
@@ -12,7 +12,7 @@ export default {
     }
   },
   methods: {
-    onInput(text) {
+    onChange(text) {
       this.$store.commit("update", {
         path: this.path,
         data: text
